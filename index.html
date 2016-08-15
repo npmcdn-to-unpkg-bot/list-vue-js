@@ -3,9 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a style="font-family: 'Lobster', cursive; color:orange; font-size: 28px;" class="navbar-brand" href="#">Zawadi Pay</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+</nav>
 
     <div id="app">
         <input v-model="newTodo" v-on:keyup.enter="addTodo">
@@ -19,6 +34,8 @@
         </ul>
   </div>
     <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
